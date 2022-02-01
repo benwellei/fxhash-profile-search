@@ -18,8 +18,6 @@ rl.question('\nWhat Tezos address would you like to check?\n', (address) => {
                 console.log(`Found address ${address}`);
                 console.log(`The username associated with this address is ${hexToUtf8(value)}`);
                 console.log(encodeURI(`https://www.fxhash.xyz/u/${hexToUtf8(value)}`))
-            } else {
-                console.log(`${address} is not associated with a registered FXhash profile.`)
             }
         });
     })
